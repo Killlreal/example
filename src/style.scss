@@ -1,0 +1,73 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("/build/styles/fonts.css");
+
+.wrapper {
+  max-width: 1410px;
+  border: solid yellow;
+  margin: auto;
+}
+
+header {
+  max-width: 1920px;
+  height: 270px;
+  border: solid red;
+  display: flex;
+  color: #171717;
+  .wrapper-blocks {
+    width: 100%;
+    height: 160px;
+    border: solid green;
+    display: flex;
+    justify-content: space-between;
+    .logo-link {
+      text-decoration: none;
+      font-family: Montserrat;
+      .block-logo {
+        max-width: 482px;
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        .text-logo {
+          max-width: 387px;
+          height: 54px;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 150%;
+          text-transform: uppercase;
+          color: #171717;
+        }
+      }
+    }
+    .wrapper-block-nav {
+      width: 668px;
+      height: 30px;
+      .block-search {
+        display: flex;
+        justify-content: space-between;
+        width: 548px;
+        #search {
+          width: 488px;
+          height: 30px;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid #757474;
+          .icon-search {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

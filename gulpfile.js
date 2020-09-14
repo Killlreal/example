@@ -29,7 +29,7 @@ function buildHTMLDist() {
         pretty: false,
       })
     )
-    .pipe(dest("dist"));
+    .pipe(dest("build"));
 }
 
 function buildStyles() {
@@ -37,6 +37,13 @@ function buildStyles() {
     .pipe(sass())
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(dest("build/styles/"));
+}
+
+function buildCSSDist() {
+  return src("src/*.scss")
+    .pipe(sass())
+    .pipe(postcss([autoprefixer(), cssnano()]))
+    .pipe(dest("build"));
 }
 
 function buildScripts() {
@@ -58,13 +65,21 @@ function watchFiles() {
   watch("src/styles/*.scss", buildStyles);
   watch(["src/pages/**/*.pug", "src/blocks/**/*.pug"], buildPages);
   watch("src/*.pug", buildHTMLDist);
+  watch("src/*.scss", buildCSSDist);
 }
 
 exports.default = series(
   clearBuild,
   parallel(
     series(
-      parallel(buildPages, buildStyles, buildScripts, buildAssets, buildHTMLDist),
+      parallel(
+        buildPages,
+        buildStyles,
+        buildScripts,
+        buildAssets,
+        buildHTMLDist,
+        buildCSSDist
+      ),
       watchFiles
     )
   )
