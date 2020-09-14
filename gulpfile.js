@@ -22,6 +22,16 @@ function buildPages() {
     .pipe(dest("build/blocks/"));
 }
 
+function buildHTMLDist() {
+  return src("src/*.pug")
+    .pipe(
+      pug({
+        pretty: false,
+      })
+    )
+    .pipe(dest("dist"));
+}
+
 function buildStyles() {
   return src("src/styles/*.scss")
     .pipe(sass())
@@ -47,13 +57,14 @@ function watchFiles() {
   watch("src/assets/**/*.*", buildAssets);
   watch("src/styles/*.scss", buildStyles);
   watch(["src/pages/**/*.pug", "src/blocks/**/*.pug"], buildPages);
+  watch("src/*.pug", buildHTMLDist);
 }
 
 exports.default = series(
   clearBuild,
   parallel(
     series(
-      parallel(buildPages, buildStyles, buildScripts, buildAssets),
+      parallel(buildPages, buildStyles, buildScripts, buildAssets, buildHTMLDist),
       watchFiles
     )
   )
