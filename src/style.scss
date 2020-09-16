@@ -8,36 +8,123 @@
   padding: 0;
 }
 
-@import url("/build/styles/fonts.css");
-
-.wrapper {
-  max-width: 1410px;
-  border: solid yellow;
-  margin: auto;
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/montserrat-v14-latin_cyrillic-regular.woff2") format("woff2"),
+    url("fonts/montserrat-v14-latin_cyrillic-regular.woff") format("woff");
+}
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/montserrat-v14-latin_cyrillic-500.woff2") format("woff2"),
+    url("fonts/montserrat-v14-latin_cyrillic-500.woff") format("woff");
+}
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/montserrat-v14-latin_cyrillic-600.woff2") format("woff2"),
+    url("fonts/montserrat-v14-latin_cyrillic-600.woff") format("woff");
 }
 
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"),
+    url("fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "fontello";
+  src: url("fonts/fontello.woff2?13086420") format("woff2"),
+    url("fonts/fontello.woff?13086420") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.icon-writing-book:before {
+  content: "\e800";
+}
+.icon-board:before {
+  content: "\e802";
+}
+.icon-burger-menu:before {
+  content: "\e803";
+}
+.icon-desk:before {
+  content: "\e804";
+}
+.icon-file:before {
+  content: "\e805";
+}
+.icon-search:before {
+  content: "\e806";
+}
+.icon-to-do-list:before {
+  content: "\e807";
+}
+.icon-visually-impaired:before {
+  content: "\e808";
+}
+.icon-site-map:before {
+  content: "\e809";
+}
+.icon-sputnick:before {
+  content: "\e80a";
+}
+.icon-vk:before {
+  content: "\e80b";
+}
+
+//header
+
+.wrapper {
+  width: 1410px;
+  margin: auto;
+}
+.wrapper-flex {
+  display: flex;
+  flex-flow: column;
+}
 header {
   max-width: 1920px;
   height: 270px;
-  border: solid red;
   display: flex;
   color: #171717;
+  background: #f6f6f6;
   .wrapper-blocks {
     width: 100%;
-    height: 160px;
-    border: solid green;
+    height: 125px;
     display: flex;
     justify-content: space-between;
     .logo-link {
       text-decoration: none;
       font-family: Montserrat;
       .block-logo {
-        max-width: 482px;
+        width: 482px;
         height: 75px;
         display: flex;
         justify-content: space-between;
         .text-logo {
-          max-width: 387px;
+          display: inline-block;
+          align-self: center;
+          width: 387px;
           height: 54px;
           font-family: Montserrat;
           font-style: normal;
@@ -49,25 +136,137 @@ header {
         }
       }
     }
-    .wrapper-block-nav {
+    .wrapper-block-search {
       width: 668px;
       height: 30px;
+      display: flex;
       .block-search {
         display: flex;
         justify-content: space-between;
         width: 548px;
+        margin-right: 30px;
         #search {
           width: 488px;
           height: 30px;
           outline: none;
           border: none;
           border-bottom: 1px solid #757474;
+          background: #f6f6f6;
           .icon-search {
             width: 30px;
             height: 30px;
           }
         }
       }
+      .block-icons {
+        display: flex;
+        flex: 1 0 auto;
+        justify-content: space-between;
+      }
     }
   }
+  .wrapper-nav {
+    width: 100%;
+    height: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #171717;
+    display: flex;
+    justify-content: space-between;
+    nav {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      display: inline-flex;
+      .nav-list {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+.icon-to-do-list {
+  font-size: 30px;
+}
+footer {
+  display: flex;
+  color: #fff;
+  max-width: 1920px;
+  height: 426px;
+  background: #517679;
+  .wrapper-footer {
+    display: flex;
+    justify-content: space-between;
+    .work-time_title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .work-time_list {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      list-style-type: none;
+      li {
+        margin-bottom: 20px;
+      }
+    }
+    .contact-information_title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .contact-information_list {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      list-style-type: none;
+      li {
+        margin-bottom: 20px;
+      }
+    }
+    .nav_links {
+      list-style-type: none;
+      li {
+        margin-bottom: 20px;
+        .nav-link_footer {
+          color: white;
+          text-decoration: none;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.02em;
+        }
+      }
+    }
+    .satellite-link {
+      color: white;
+      font-size: 20px;
+    }
+  }
+}
+
+.vk-link {
+  color: #fff;
+  font-size: 30px;
 }

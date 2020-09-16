@@ -22,15 +22,6 @@ function buildPages() {
     .pipe(dest("build/blocks/"));
 }
 
-function buildHTMLDist() {
-  return src("src/*.pug")
-    .pipe(
-      pug({
-        pretty: false,
-      })
-    )
-    .pipe(dest("build"));
-}
 
 function buildStyles() {
   return src("src/styles/*.scss")
@@ -64,7 +55,6 @@ function watchFiles() {
   watch("src/assets/**/*.*", buildAssets);
   watch("src/styles/*.scss", buildStyles);
   watch(["src/pages/**/*.pug", "src/blocks/**/*.pug"], buildPages);
-  watch("src/*.pug", buildHTMLDist);
   watch("src/*.scss", buildCSSDist);
 }
 
@@ -77,7 +67,6 @@ exports.default = series(
         buildStyles,
         buildScripts,
         buildAssets,
-        buildHTMLDist,
         buildCSSDist
       ),
       watchFiles
