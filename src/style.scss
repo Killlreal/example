@@ -7,7 +7,16 @@
   margin: 0;
   padding: 0;
 }
-
+body{
+  display: flex;
+  flex-direction: column;
+}
+main{
+  flex: 1 0 auto;
+}
+footer{
+  flex: 0 0 auto;
+}
 /* montserrat-regular - latin_cyrillic */
 @font-face {
   font-family: "Montserrat";
@@ -43,55 +52,30 @@
 }
 
 @font-face {
-  font-family: "fontello";
-  src: url("fonts/fontello.woff2?13086420") format("woff2"),
-    url("fonts/fontello.woff?13086420") format("woff");
+  font-family: 'fontello';
+  src: url('fonts/fontello.woff2?15378556') format('woff2'),
+  url('fonts/fontello.woff?15378556') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
+[class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   display: inline-block;
 }
 
-.icon-writing-book:before {
-  content: "\e800";
-}
-.icon-board:before {
-  content: "\e802";
-}
-.icon-burger-menu:before {
-  content: "\e803";
-}
-.icon-desk:before {
-  content: "\e804";
-}
-.icon-file:before {
-  content: "\e805";
-}
-.icon-search:before {
-  content: "\e806";
-}
-.icon-to-do-list:before {
-  content: "\e807";
-}
-.icon-visually-impaired:before {
-  content: "\e808";
-}
-.icon-site-map:before {
-  content: "\e809";
-}
-.icon-sputnick:before {
-  content: "\e80a";
-}
-.icon-vk:before {
-  content: "\e80b";
-}
-
+.icon-align-justify:before { content: '\e800'; }
+.icon-documets:before { content: '\e801'; } 
+.icon-education:before { content: '\e802'; } 
+.icon-eye:before { content: '\e803'; } 
+.icon-paid-education:before { content: '\e804'; } 
+.icon-places:before { content: '\e805'; } 
+.icon-satellite:before { content: '\e806'; } 
+.icon-site-map:before { content: '\e808'; } 
+.icon-teachers:before { content: '\e809'; } 
+.icon-vk:before { content: '\e80a'; }
 //header
 
 .wrapper {
@@ -194,6 +178,7 @@ header {
 .icon-to-do-list {
   font-size: 30px;
 }
+
 footer {
   display: flex;
   color: #fff;
@@ -266,7 +251,222 @@ footer {
   }
 }
 
-.vk-link {
-  color: #fff;
-  font-size: 30px;
+// info-about-education
+.info-education{
+  color: #171717;
+  .direction-links_position{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    justify-content: space-between;
+    width: 417px;
+    height: 14px;
+    margin: 50px 0 100px 0;
+    .direction-links__main-link{
+      text-decoration: none;
+      color: #757474;
+    }
+  }
 }
+
+.info-blocks{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: white;
+  .info-blocks__title{
+    color: #171717;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 45px;
+  }
+}
+
+
+.info-first{
+  display: flex;
+  justify-content: space-between;
+  .info-first__main{
+    width: 449px;
+    height: 260px;
+    position: relative;
+    .info-first__img{
+      width: 449px;
+      height: 260px;
+      background: url('assets/img/grain.png') no-repeat ;
+      position: relative;
+      &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-color: rgba(78, 123, 125, 0.8);
+        border-radius: 5px;
+      }
+    }
+    .info-first__title{
+      position: absolute;
+      top: 107px;
+      left: 72px;
+      line-height: 29px;
+      text-transform: uppercase;
+      padding-bottom: 17px;
+      &::before{
+        content: '';
+        background-color: #FFB401;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+  .info-first__manager{
+    position: relative;
+    width: 930px;
+    height: 260px;
+    .info-first__img{
+      width: 930px;
+      height: 260px;
+      background: url('assets/img/manager.png') no-repeat ;
+      position: relative;
+      &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-color: rgba(78, 123, 125, 0.8);
+        border-radius: 5px;
+      }
+    }
+    .info-first__title{
+      width: 756px;
+      position: absolute;
+      top: 107px;
+      left: 72px;
+      line-height: 150%;
+      text-align: center;
+      padding-bottom: 17px;
+      &::before{
+        content: '';
+        background-color: #FFB401;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+}
+.info-second{
+  height: 390px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.info-second__teachers{
+  width: 690px;
+  height: 390px;
+  background: linear-gradient(0deg, #FFB401, #FFB401), rgba(23, 23, 23, 0.5);
+  border-radius: 5px;
+  position: relative;
+  .icon-teachers{
+    position: absolute;
+    left: 314px;
+    top: 137px;
+    font-size: 58px;
+  }
+  .teachers__title{
+    position: absolute;
+    left: 63px;
+    top: 225px;
+  }
+}
+
+.info-second__education{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  .info-second__standarts{
+    width: 690px;
+    height: 161px;
+    background: #FFB401;
+    position: relative;
+    border-radius: 5px;
+    .icon-education{
+      position: absolute;
+      top: 56px;
+      left: 91px;
+      font-size: 55px;
+    }
+    .info-second__title{
+      position: absolute;
+      left: 174px;
+      top: 71px;
+    }
+  }
+  .info-second__documents{
+    display: flex;
+    width: 690px;
+    justify-content: space-between;
+    .education{
+      position: relative;
+      .education__img{
+        width: 330px;
+        height: 200px;
+        background: url('assets/img/education.png');
+        position: relative;
+        &::before{
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background: rgba(78, 123, 125, 0.4);
+          border-radius: 5px;
+        }
+      }
+      .education__title{
+        position: absolute;
+        top: 85px;
+        left: 65px;
+      }
+    }
+    .documents{
+      width: 330px;
+      height: 200px;
+      background: #FFB401;
+      position: relative;
+      border-radius: 5px;
+      .icon-documets{
+        font-size: 60px;
+        position: absolute;
+        top: 45px;
+        left: 140px;
+      }
+      .documents__title{
+        position: absolute;
+        top: 125px;
+        left: 81px;
+      }
+    }
+  }
+}
+
