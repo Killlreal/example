@@ -1,3 +1,31 @@
+mixin block-first(classimg,classtitle,nametitle)
+    a(href="#").block-first
+        .block-first__img(class=classimg)
+        .block-first__title(class=classtitle) #{nametitle}
+mixin block-second(classimg,classtitle,nametitle)
+    a(href="#").block-second
+        .block-second__img(class=classimg)
+        .block-second__title(class=classtitle) #{nametitle}
+mixin block-third(nametitle)
+    a(href="#").block-third
+        figure.icon-paid-education
+        .block-third__title #{nametitle}
+mixin block-fourth(nametitle)
+    a(href="#").block-fourth
+        figure.icon-places
+        p.block-fourth__title #{nametitle}
+mixin block-fifth(classimg,classtitle,nametitle)
+    a(href="#").block-fifth
+        .block-fifth__img(class=classimg)
+        .block-fifth__title(class=classtitle) #{nametitle}
+mixin block-sixth(nametitle)
+    a(href="#").block-sixth
+        figure.icon-education(class=classimg)
+        .block-sixth__title(class=classtitle) #{nametitle}
+mixin block-seven(test)
+    p(class=`link_${test}`) #{test}
+    div(class='name_' + test)
+
 .info-education
     .wrapper
         .direction-links.direction-links_position
@@ -7,27 +35,24 @@
             p Сведения об общеобразовательной организации
         section.info-blocks
             h1.info-blocks__title Сведения об общеобразовательной организации
-            .info-first
-                .info-first__main
-                    .info-first__img
-                    p.info-first__title Основные сведения
-                .info-first__manager
-                    .info-first__img
-                    p.info-first__title Структура и органы управления образовательной организацией
-            .info-second
-                .info-second__teachers
-                    figure.icon-teachers
-                    p.teachers__title Руководство. Педагогический состав
-                .info-second__education
-                    .info-second__standarts
-                        figure.icon-education
-                        p.info-second__title Образовательные стандарты
-                    .info-second__documents
-                        .education
-                            .education__img
-                            p.education__title Образование
-                        .documents
-                            figure.icon-documets
-                            p.documents__title Документы
-            .info-third
-            .info-fourth
+            .info-blocks__flex
+                .info-first
+                    +block-first('img-scolarship','info-first__title', 'Основные сведения')
+                    +block-second('img-manager','info-first__title_second','Структура и органы управления образовательной организацией')
+                .info-second
+                    +block-third('Руководство. Педагогический состав')
+                    .info-second__education
+                        +block-fourth('Образовательные стандарты')
+                        .info-second__documents
+                            +block-fifth('img-finance','fifth__title','Образование')
+                            +block-sixth('Документы')
+                .info-third.flex
+                    +block-first('img-scolarship','first__title', 'Стипендии и иные виды материальной поддержки')
+                    +block-second('img-provision','second__title','Материально-техническое обеспечение и оснащенность образовательного процесса')
+                .info-fourth.flex
+                    +block-third('Платные образовательные услуги')
+                    .flex-column
+                        +block-fourth('Вакантные места для приема (перевода)')
+                        .flex-example
+                            +block-fifth('img-finance','fifth__title','Финансово- хозяйственная деятельность')
+                            +block-sixth('Документы')

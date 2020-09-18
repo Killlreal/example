@@ -16,12 +16,11 @@ function buildPages() {
   return src("src/blocks/*.pug")
     .pipe(
       pug({
-        pretty: false,
+        pretty: true,
       })
     )
     .pipe(dest("build/blocks/"));
 }
-
 
 function buildStyles() {
   return src("src/styles/*.scss")
