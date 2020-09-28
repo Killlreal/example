@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="../sgmy.css"/>
+  </head>
+  <body>
+    <header></header>
+    <main class="main">
+      <section class="available">
+        <div class="available__blocks">
+          <div class="available__forms">
+            <p class="availabel__title">Доступные формы</p>
+            <div class="availabel__form-block">
+              <div class="availabel__container">
+                <div class="availabel__text">
+                  <div class="availabel__number">
+                    <div class="number">1</div>
+                  </div>
+                  <p class="availabel__application">Заявление на предоставление академического отпуска</p>
+                </div>
+                <button class="availabel__write-button"> 
+                  <figure class="icon-pencile"></figure><span>Заполнить</span>
+                </button>
+              </div>
+              <div class="blocks hidden">
+                <form class="form__blocks" action="" method="post">
+                  <div class="flex">
+                    <label class="label-text" for="input__rector_1">Ректору</label>
+                    <input class="input__rector input" id="input__rector_1" type="text" placeholder="ФИО ректора" name="torector" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__student_1">От студента группы</label>
+                    <input class="input__student input" id="input__student_1" type="text" name="fromstudent" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__faculty_1">Факультета</label>
+                    <input class="input__faculty input" id="input__faculty_1" type="text" placeholder="Наименование факультета" name="faculty" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__names-student_1">ФИО студента</label>
+                    <input class="input__names-student input" id="input__names-student_1" type="text" placeholder="ФИО" name="names-student" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <p class="label-text">Прошу предоставить мне академический отпуск по</p>
+                    <textarea class="input__vacation input textarea-input" placeholder="Причина" name="vacation" required="required"></textarea>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__date-from_1">С</label>
+                    <input class="input__date-from input" id="input__date-from_1" type="date" name="date-from" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__date-to_1">По</label>
+                    <input class="input__date-to input" id="input__date-to_1" type="date" name="date-to" required="required"/>
+                  </div>
+                  <div class="send">
+                    <label class="upload-file__label" for="upload-file__input_1">
+                      <figure class="icon-clip"></figure><span class="upload-file__text">Прикрепите документ, подтверждающий причину отпуска</span>
+                    </label>
+                    <input class="upload-file__input" id="upload-file__input_1" type="file" name="file" required="required" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip"/>
+                  </div>
+                  <div class="personal-date">
+                    <input class="input__date" id="input__date_1" type="checkbox" name="personal-date" required="required"/>
+                    <label class="label-date" for="input__date_1">Согласие на обработку персональных данных</label>
+                  </div>
+                  <input class="send-submit" type="submit" value="Отправить форму"/>
+                </form>
+              </div>
+            </div>
+            <div class="availabel__form-block">
+              <div class="availabel__container">
+                <div class="availabel__text">
+                  <div class="availabel__number">
+                    <div class="number">2</div>
+                  </div>
+                  <p class="availabel__application">Заявление на предоставление академического отпуска</p>
+                </div>
+                <button class="availabel__write-button"> 
+                  <figure class="icon-pencile"></figure><span>Заполнить</span>
+                </button>
+              </div>
+              <div class="blocks hidden">
+                <form class="form__blocks" action="" method="post">
+                  <div class="flex">
+                    <label class="label-text" for="input__rector_2">Ректору</label>
+                    <input class="input__rector input" id="input__rector_2" type="text" placeholder="ФИО ректора" name="torector" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__student_2">От студента группы</label>
+                    <input class="input__student input" id="input__student_2" type="text" name="fromstudent" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__faculty_2">Факультета</label>
+                    <input class="input__faculty input" id="input__faculty_2" type="text" placeholder="Наименование факультета" name="faculty" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__names-student_2">ФИО студента</label>
+                    <input class="input__names-student input" id="input__names-student_2" type="text" placeholder="ФИО" name="names-student" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <p class="label-text">Прошу предоставить мне академический отпуск по</p>
+                    <textarea class="input__vacation input textarea-input" placeholder="Причина" name="vacation" required="required"></textarea>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__date-from_2">С</label>
+                    <input class="input__date-from input" id="input__date-from_2" type="date" name="date-from" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__date-to_2">По</label>
+                    <input class="input__date-to input" id="input__date-to_2" type="date" name="date-to" required="required"/>
+                  </div>
+                  <div class="send">
+                    <label class="upload-file__label" for="upload-file__input_2">
+                      <figure class="icon-clip"></figure><span class="upload-file__text">Прикрепите документ, подтверждающий причину отпуска</span>
+                    </label>
+                    <input class="upload-file__input" id="upload-file__input_2" type="file" name="file" required="required" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip"/>
+                  </div>
+                  <div class="personal-date">
+                    <input class="input__date" id="input__date_2" type="checkbox" name="personal-date" required="required"/>
+                    <label class="label-date" for="input__date_2">Согласие на обработку персональных данных</label>
+                  </div>
+                  <input class="send-submit" type="submit" value="Отправить форму"/>
+                </form>
+              </div>
+            </div>
+            <div class="availabel__form-block">
+              <div class="availabel__container">
+                <div class="availabel__text">
+                  <div class="availabel__number">
+                    <div class="number">3</div>
+                  </div>
+                  <p class="availabel__application">Заявление на предоставление академического отпуска</p>
+                </div>
+                <button class="availabel__write-button"> 
+                  <figure class="icon-pencile"></figure><span>Заполнить</span>
+                </button>
+              </div>
+              <div class="blocks hidden">
+                <form class="form__blocks" action="" method="post">
+                  <div class="flex">
+                    <label class="label-text" for="input__rector_3">Ректору</label>
+                    <input class="input__rector input" id="input__rector_3" type="text" placeholder="ФИО ректора" name="torector" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__student_3">От студента группы</label>
+                    <input class="input__student input" id="input__student_3" type="text" name="fromstudent" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__faculty_3">Факультета</label>
+                    <input class="input__faculty input" id="input__faculty_3" type="text" placeholder="Наименование факультета" name="faculty" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__names-student_3">ФИО студента</label>
+                    <input class="input__names-student input" id="input__names-student_3" type="text" placeholder="ФИО" name="names-student" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <p class="label-text">Прошу предоставить мне академический отпуск по</p>
+                    <textarea class="input__vacation input textarea-input" placeholder="Причина" name="vacation" required="required"></textarea>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__date-from_3">С</label>
+                    <input class="input__date-from input" id="input__date-from_3" type="date" name="date-from" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__date-to_3">По</label>
+                    <input class="input__date-to input" id="input__date-to_3" type="date" name="date-to" required="required"/>
+                  </div>
+                  <div class="send">
+                    <label class="upload-file__label" for="upload-file__input_3">
+                      <figure class="icon-clip"></figure><span class="upload-file__text">Прикрепите документ, подтверждающий причину отпуска</span>
+                    </label>
+                    <input class="upload-file__input" id="upload-file__input_3" type="file" name="file" required="required" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip"/>
+                  </div>
+                  <div class="personal-date">
+                    <input class="input__date" id="input__date_3" type="checkbox" name="personal-date" required="required"/>
+                    <label class="label-date" for="input__date_3">Согласие на обработку персональных данных</label>
+                  </div>
+                  <input class="send-submit" type="submit" value="Отправить форму"/>
+                </form>
+              </div>
+            </div>
+            <div class="availabel__form-block">
+              <div class="availabel__container">
+                <div class="availabel__text">
+                  <div class="availabel__number">
+                    <div class="number">4</div>
+                  </div>
+                  <p class="availabel__application">Заявление на предоставление академического отпуска</p>
+                </div>
+                <button class="availabel__write-button"> 
+                  <figure class="icon-pencile"></figure><span>Заполнить</span>
+                </button>
+              </div>
+              <div class="blocks hidden">
+                <form class="form__blocks" action="" method="post">
+                  <div class="flex">
+                    <label class="label-text" for="input__rector_4">Ректору</label>
+                    <input class="input__rector input" id="input__rector_4" type="text" placeholder="ФИО ректора" name="torector" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__student_4">От студента группы</label>
+                    <input class="input__student input" id="input__student_4" type="text" name="fromstudent" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__faculty_4">Факультета</label>
+                    <input class="input__faculty input" id="input__faculty_4" type="text" placeholder="Наименование факультета" name="faculty" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__names-student_4">ФИО студента</label>
+                    <input class="input__names-student input" id="input__names-student_4" type="text" placeholder="ФИО" name="names-student" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <p class="label-text">Прошу предоставить мне академический отпуск по</p>
+                    <textarea class="input__vacation input textarea-input" placeholder="Причина" name="vacation" required="required"></textarea>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__date-from_4">С</label>
+                    <input class="input__date-from input" id="input__date-from_4" type="date" name="date-from" required="required"/>
+                  </div>
+                  <div class="flex">
+                    <label class="label-text" for="input__date-to_4">По</label>
+                    <input class="input__date-to input" id="input__date-to_4" type="date" name="date-to" required="required"/>
+                  </div>
+                  <div class="send">
+                    <label class="upload-file__label" for="upload-file__input_4">
+                      <figure class="icon-clip"></figure><span class="upload-file__text">Прикрепите документ, подтверждающий причину отпуска</span>
+                    </label>
+                    <input class="upload-file__input" id="upload-file__input_4" type="file" name="file" required="required" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip"/>
+                  </div>
+                  <div class="personal-date">
+                    <input class="input__date" id="input__date_4" type="checkbox" name="personal-date" required="required"/>
+                    <label class="label-date" for="input__date_4">Согласие на обработку персональных данных</label>
+                  </div>
+                  <input class="send-submit" type="submit" value="Отправить форму"/>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="availabel__files">
+            <p class="availabel__title">Доступные файлы</p>
+            <div class="download__form-block">
+              <div class="download__container">
+                <div class="download__text">
+                  <div class="download__number">
+                    <div class="number">1</div>
+                  </div>
+                  <p class="download__application">Заявление на предоставление академического отпуска</p>
+                </div>
+                <div class="download_links"><a class="download__write-button" href="#" download="download"> 
+                    <figure class="icon-download"></figure><span>Скачать</span></a><a class="target__write-button" href="#" target="_blank"> 
+                    <figure class="icon-target"></figure><span>Открыть в новом окне</span></a></div>
+              </div>
+            </div>
+            <div class="download__form-block">
+              <div class="download__container">
+                <div class="download__text">
+                  <div class="download__number">
+                    <div class="number">2</div>
+                  </div>
+                  <p class="download__application">Заявление на предоставление академического отпуска</p>
+                </div>
+                <div class="download_links"><a class="download__write-button" href="#" download="download"> 
+                    <figure class="icon-download"></figure><span>Скачать</span></a><a class="target__write-button" href="#" target="_blank"> 
+                    <figure class="icon-target"></figure><span>Открыть в новом окне</span></a></div>
+              </div>
+            </div>
+            <div class="download__form-block">
+              <div class="download__container">
+                <div class="download__text">
+                  <div class="download__number">
+                    <div class="number">3</div>
+                  </div>
+                  <p class="download__application">Заявление на предоставление академического отпуска</p>
+                </div>
+                <div class="download_links"><a class="download__write-button" href="#" download="download"> 
+                    <figure class="icon-download"></figure><span>Скачать</span></a><a class="target__write-button" href="#" target="_blank"> 
+                    <figure class="icon-target"></figure><span>Открыть в новом окне</span></a></div>
+              </div>
+            </div>
+            <div class="download__form-block">
+              <div class="download__container">
+                <div class="download__text">
+                  <div class="download__number">
+                    <div class="number">4</div>
+                  </div>
+                  <p class="download__application">Заявление на предоставление академического отпуска</p>
+                </div>
+                <div class="download_links"><a class="download__write-button" href="#" download="download"> 
+                    <figure class="icon-download"></figure><span>Скачать</span></a><a class="target__write-button" href="#" target="_blank"> 
+                    <figure class="icon-target"></figure><span>Открыть в новом окне</span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

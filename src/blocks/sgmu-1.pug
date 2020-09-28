@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="../sgmy.css")
+    body
+        haeder
+        main.main
+            .sgmu__main
+                .form-block
+                    .form-block__content
+                        .form-block__text
+                            p.form-block__main-title Авторизация
+                            p.form-block__title Забыли пароль? Восстановить
+                        form.form-main(action="", method="post")
+                            .login
+                                label.label-login(for=".for-email") Логин
+                                input.form-email(type="email", name="email" placeholder="Логин" required)
+                            .password
+                                label.label-password(for=".form-password") Пароль
+                                input.form-password(type="password", name="current-password" placeholder="Пароль" required autocomplete="off" )
+                            input.form-button-enter(type="submit", value="Войти")
+        footer
