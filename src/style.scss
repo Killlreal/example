@@ -59,9 +59,9 @@ footer {
 }
 
 @font-face {
-  font-family: 'fontello';
-  src: url('fonts/fontello.woff2?15378556') format('woff2'),
-    url('fonts/fontello.woff?15378556') format('woff');
+  font-family: "fontello";
+  src: url("fonts/fontello.woff2?15378556") format("woff2"),
+    url("fonts/fontello.woff?15378556") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -75,43 +75,43 @@ footer {
 }
 
 .icon-align-justify:before {
-  content: '\e800';
+  content: "\e800";
 }
 
 .icon-documets:before {
-  content: '\e801';
+  content: "\e801";
 }
 
 .icon-education:before {
-  content: '\e802';
+  content: "\e802";
 }
 
 .icon-eye:before {
-  content: '\e803';
+  content: "\e803";
 }
 
 .icon-paid-education:before {
-  content: '\e804';
+  content: "\e804";
 }
 
 .icon-places:before {
-  content: '\e805';
+  content: "\e805";
 }
 
 .icon-satellite:before {
-  content: '\e806';
+  content: "\e806";
 }
 
 .icon-site-map:before {
-  content: '\e808';
+  content: "\e808";
 }
 
 .icon-teachers:before {
-  content: '\e809';
+  content: "\e809";
 }
 
 .icon-vk:before {
-  content: '\e80a';
+  content: "\e80a";
 }
 
 //header
@@ -243,7 +243,7 @@ footer {
     transition: all 100ms ease;
 
     &:hover {
-      color: #FFB401;
+      color: #ffb401;
       transition: all 100ms ease;
     }
 
@@ -336,7 +336,6 @@ footer {
   }
 }
 
-
 // info-about-education
 .flex {
   display: flex;
@@ -347,7 +346,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  height: 390px;
 }
 
 .flex-example {
@@ -366,7 +365,6 @@ footer {
     line-height: 14px;
     display: flex;
     justify-content: space-between;
-    width: 417px;
     height: 14px;
     margin: 50px 0 100px 0;
 
@@ -399,13 +397,14 @@ footer {
   }
 
   .info-blocks__flex {
-    height: 1410px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 }
 
+[class*="info-"] {
+  margin-bottom: 30px;
+}
 
 .info-first {
   display: flex;
@@ -417,13 +416,13 @@ footer {
   display: flex;
   justify-content: space-between;
 
-  .info-second__education {
+  .block-second__education {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 390px;
 
-    .info-second__documents {
+    .block-second__documents {
       display: flex;
       width: 690px;
       justify-content: space-between;
@@ -446,8 +445,8 @@ footer {
   }
 
   &:hover .block-first__title::before {
-    content: '';
-    background-color: #FFB401;
+    content: "";
+    background-color: #ffb401;
     height: 2px;
     position: absolute;
     left: 0;
@@ -457,7 +456,7 @@ footer {
   }
 
   &:hover .block-first__img {
-    transform: scale(1.1)
+    transform: scale(1.1);
   }
 
   .block-first__img {
@@ -467,7 +466,7 @@ footer {
     transition: 1s;
 
     &::before {
-      content: '';
+      content: "";
       width: 100%;
       height: 100%;
       left: 0;
@@ -487,7 +486,7 @@ footer {
 }
 
 .img-scolarship {
-  background: url('assets/img/scolarship.png') no-repeat;
+  background: url("assets/img/scolarship.png") no-repeat;
   border-radius: 5px;
 }
 
@@ -517,8 +516,8 @@ footer {
   }
 
   &:hover .block-second__title::before {
-    content: '';
-    background-color: #FFB401;
+    content: "";
+    background-color: #ffb401;
     height: 2px;
     position: absolute;
     left: 0;
@@ -538,7 +537,7 @@ footer {
     transition: 1s;
 
     &::before {
-      content: '';
+      content: "";
       width: 100%;
       height: 100%;
       left: 0;
@@ -557,7 +556,7 @@ footer {
 }
 
 .img-provision {
-  background: url('assets/img/provision.png') no-repeat;
+  background: url("assets/img/provision.png") no-repeat;
   border-radius: 5px;
 }
 
@@ -568,7 +567,7 @@ footer {
 }
 
 .img-manager {
-  background: url('assets/img/manager.png') no-repeat;
+  background: url("assets/img/manager.png") no-repeat;
   border-radius: 5px;
 }
 
@@ -582,7 +581,7 @@ footer {
 .block-third {
   width: 690px;
   height: 390px;
-  background: #FFB401;
+  background: #ffb401;
   border-radius: 5px;
   position: relative;
   color: white;
@@ -590,8 +589,8 @@ footer {
 
   &:hover {
     background: white;
-    color: #FFB401;
-    box-shadow: inset 0 0 0 2px #FFB401;
+    color: #ffb401;
+    box-shadow: inset 0 0 0 2px #ffb401;
     transition: all 300ms ease;
   }
 
@@ -613,7 +612,7 @@ footer {
 .block-fourth {
   width: 690px;
   height: 161px;
-  background: #FFB401;
+  background: #ffb401;
   border-radius: 5px;
   position: relative;
   color: white;
@@ -621,8 +620,8 @@ footer {
 
   &:hover {
     background: white;
-    color: #FFB401;
-    box-shadow: inset 0 0 0 2px #FFB401;
+    color: #ffb401;
+    box-shadow: inset 0 0 0 2px #ffb401;
     transition: all 300ms ease;
   }
 
@@ -655,8 +654,8 @@ footer {
   }
 
   &:hover .block-fifth__title::before {
-    content: '';
-    background-color: #FFB401;
+    content: "";
+    background-color: #ffb401;
     height: 2px;
     position: absolute;
     left: 0;
@@ -666,7 +665,7 @@ footer {
   }
 
   &:hover .block-fifth__img {
-    transform: scale(1.1)
+    transform: scale(1.1);
   }
 
   .block-fifth__img {
@@ -676,7 +675,7 @@ footer {
     transition: 1s;
 
     &::before {
-      content: '';
+      content: "";
       width: 100%;
       height: 100%;
       left: 0;
@@ -695,7 +694,7 @@ footer {
 }
 
 .img-finance {
-  background: url('assets/img/education.png') no-repeat;
+  background: url("assets/img/education.png") no-repeat;
   border-radius: 5px;
 }
 
@@ -709,7 +708,7 @@ footer {
 .block-sixth {
   width: 330px;
   height: 200px;
-  background: #FFB401;
+  background: #ffb401;
   position: relative;
   border-radius: 5px;
   color: white;
@@ -717,8 +716,8 @@ footer {
 
   &:hover {
     background: white;
-    color: #FFB401;
-    box-shadow: inset 0 0 0 2px #FFB401;
+    color: #ffb401;
+    box-shadow: inset 0 0 0 2px #ffb401;
     transition: all 300ms ease;
   }
 
@@ -757,7 +756,6 @@ footer {
     .news__title_all-news {
       text-decoration: none;
       color: inherit;
-
     }
   }
 }
@@ -812,7 +810,7 @@ footer {
 }
 
 .study {
-  background: #F7F7F7;
+  background: #f7f7f7;
   margin-bottom: 100px;
 
   .study__block {
@@ -838,14 +836,9 @@ footer {
   }
 }
 
-
-
-
-
-
 .students {
-  border-left: solid #ECDDB9;
-  border-right: solid #ECDDB9;
+  border-left: solid #ecddb9;
+  border-right: solid #ecddb9;
 }
 
 .study__title {
@@ -879,7 +872,7 @@ footer {
 }
 
 .study__button {
-  border: 1px solid #FFB401;
+  border: 1px solid #ffb401;
   box-sizing: border-box;
   border-radius: 5px;
   width: 220px;
@@ -889,7 +882,7 @@ footer {
   text-decoration: none;
 
   .study__button_text {
-    color: #FFB401;
+    color: #ffb401;
     display: inline-block;
     margin: auto;
     font-style: normal;
@@ -921,7 +914,6 @@ footer {
     .directions__title_all-directions {
       text-decoration: none;
       color: inherit;
-
     }
   }
 }
@@ -963,7 +955,7 @@ footer {
 }
 
 .resources {
-  background: #F7F7F7;
+  background: #f7f7f7;
   padding: 50px 0 100px 0;
 }
 
@@ -988,3 +980,5 @@ footer {
   height: 200px;
   border: solid red;
 }
+
+@import "third.scss";

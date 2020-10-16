@@ -1,0 +1,51 @@
+mixin block-first(classimg,classtitle,nametitle)
+    a(href="#").block-first
+        .block-first__img(class=classimg)
+        .block-first__title(class=classtitle) #{nametitle}
+mixin block-second(classimg,classtitle,nametitle)
+    a(href="#").block-second
+        .block-second__img(class=classimg)
+        .block-second__title(class=classtitle) #{nametitle}
+mixin block-third(nametitle)
+    a(href="#").block-third
+        figure.icon-paid-education
+        .block-third__title #{nametitle}
+mixin block-fourth(classimg,nametitle)
+    a(href="#").block-fourth
+        .block-second__img(class=classimg)
+        figure.icon-places
+        p.block-fourth__title #{nametitle}
+mixin block-fifth(classimg,classtitle,nametitle)
+    a(href="#").block-fifth
+        .block-fifth__img(class=classimg)
+        .block-fifth__title(class=classtitle) #{nametitle}
+mixin block-sixth(nametitle)
+    a(href="#").block-sixth
+        figure.icon-education(class=classimg)
+        .block-sixth__title(class=classtitle) #{nametitle}
+mixin block-seven(test)
+    p(class=`link_${test}`) #{test}
+    div(class='name_' + test)
+
+.info-education
+    .wrapper
+        .direction-links.direction-links_position
+            a.direction-links__main-link(href="../blocks/index.html")
+                p Главная
+            img(src="../assets/img/icons/direction-arrow.svg", alt="")
+            a.direction-links__main-link(href="../blocks/second.html")
+                p Сведения об общеобразовательной организации
+            img(src="../assets/img/icons/direction-arrow.svg", alt="")
+            p Руководство. Педaгогический состав
+        section.info-blocks
+            h1.info-blocks__title Руководство. Педагогический состав
+            .info-blocks__flex
+                .info-first
+                    +block-first('img-scolarship','info-first__title', 'Администрация')
+                    +block-second('img-manager','info-first__title_second','Структура и органы управления образовательной организацией')
+                .info-second
+                    +block-third('Руководство. Педагогический состав')
+                    .block-second__education
+                        +block-fourth('','Образовательные стандарты')
+                        +block-fourth('img-admin','Образовательные стандарты')
+                        

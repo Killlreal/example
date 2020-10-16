@@ -7,7 +7,7 @@ mixin block-second(classimg,classtitle,nametitle)
         .block-second__img(class=classimg)
         .block-second__title(class=classtitle) #{nametitle}
 mixin block-third(nametitle)
-    a(href="#").block-third
+    a(href="../blocks/third.html").block-third
         figure.icon-paid-education
         .block-third__title #{nametitle}
 mixin block-fourth(nametitle)
@@ -29,7 +29,7 @@ mixin block-seven(test)
 .info-education
     .wrapper
         .direction-links.direction-links_position
-            a.direction-links__main-link(href="#")
+            a.direction-links__main-link(href="../blocks/index.html")
                 p Главная
             img(src="../assets/img/icons/direction-arrow.svg", alt="Переход на страницу")
             p Сведения об общеобразовательной организации
@@ -41,9 +41,9 @@ mixin block-seven(test)
                     +block-second('img-manager','info-first__title_second','Структура и органы управления образовательной организацией')
                 .info-second
                     +block-third('Руководство. Педагогический состав')
-                    .info-second__education
+                    .block-second__education
                         +block-fourth('Образовательные стандарты')
-                        .info-second__documents
+                        .block-second__documents
                             +block-fifth('img-finance','fifth__title','Образование')
                             +block-sixth('Документы')
                 .info-third.flex
