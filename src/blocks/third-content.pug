@@ -11,8 +11,7 @@ mixin block-third(nametitle)
         figure.icon-paid-education
         .block-third__title #{nametitle}
 mixin block-fourth(classimg,nametitle)
-    a(href="#").block-fourth
-        .block-second__img(class=classimg)
+    a(href="#").block-fourth(class=classimg)
         figure.icon-places
         p.block-fourth__title #{nametitle}
 mixin block-fifth(classimg,classtitle,nametitle)
@@ -26,6 +25,27 @@ mixin block-sixth(nametitle)
 mixin block-seven(test)
     p(class=`link_${test}`) #{test}
     div(class='name_' + test)
+
+// images blocks
+mixin block-image__450_260(nametitle)
+    a.block-image__450_260(href="#")
+        .block-image__title #{nametitle}
+mixin block-image__930_360(nametitle)
+    a.block-image__930_360(href="#")
+        .block-image__title #{nametitle}
+mixin block-image__690_390(nametitle)
+    a.block-image__690_390(href="#")
+        .block-image__title #{nametitle}
+mixin block-image__690_160(nametitle)
+    a.block-image__690_160(href="#")
+        .block-image__title #{nametitle}
+mixin block-image__330_200(nametitle)
+    a.block-image__330_200(href="#")
+        .block-image__title #{nametitle}
+mixin block-image__690_180(nametitle)
+    a.block-image__690_180(href="#")
+        .block-image__title #{nametitle}
+
 
 .info-education
     .wrapper
@@ -41,11 +61,5 @@ mixin block-seven(test)
             h1.info-blocks__title Руководство. Педагогический состав
             .info-blocks__flex
                 .info-first
-                    +block-first('img-scolarship','info-first__title', 'Администрация')
-                    +block-second('img-manager','info-first__title_second','Структура и органы управления образовательной организацией')
-                .info-second
-                    +block-third('Руководство. Педагогический состав')
-                    .block-second__education
-                        +block-fourth('','Образовательные стандарты')
-                        +block-fourth('img-admin','Образовательные стандарты')
-                        
+                    +block-image__450_260('Администрация anafgffg')
+                    +block-image__930_360('комиссия общеобразовательных и общественных дисциплин комиссия общеобразовательных и общественных дисциплин')
