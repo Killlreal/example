@@ -1,51 +1,4 @@
-mixin block-first(classimg,classtitle,nametitle)
-    a(href="#").block-first
-        .block-first__img(class=classimg)
-        .block-first__title(class=classtitle) #{nametitle}
-mixin block-second(classimg,classtitle,nametitle)
-    a(href="#").block-second
-        .block-second__img(class=classimg)
-        .block-second__title(class=classtitle) #{nametitle}
-mixin block-third(nametitle)
-    a(href="#").block-third
-        figure.icon-paid-education
-        .block-third__title #{nametitle}
-mixin block-fourth(classimg,nametitle)
-    a(href="#").block-fourth(class=classimg)
-        figure.icon-places
-        p.block-fourth__title #{nametitle}
-mixin block-fifth(classimg,classtitle,nametitle)
-    a(href="#").block-fifth
-        .block-fifth__img(class=classimg)
-        .block-fifth__title(class=classtitle) #{nametitle}
-mixin block-sixth(nametitle)
-    a(href="#").block-sixth
-        figure.icon-education(class=classimg)
-        .block-sixth__title(class=classtitle) #{nametitle}
-mixin block-seven(test)
-    p(class=`link_${test}`) #{test}
-    div(class='name_' + test)
-
-// images blocks
-mixin block-image__450_260(nametitle)
-    a.block-image__450_260(href="#")
-        .block-image__title #{nametitle}
-mixin block-image__930_360(nametitle)
-    a.block-image__930_360(href="#")
-        .block-image__title #{nametitle}
-mixin block-image__690_390(nametitle)
-    a.block-image__690_390(href="#")
-        .block-image__title #{nametitle}
-mixin block-image__690_160(nametitle)
-    a.block-image__690_160(href="#")
-        .block-image__title #{nametitle}
-mixin block-image__330_200(nametitle)
-    a.block-image__330_200(href="#")
-        .block-image__title #{nametitle}
-mixin block-image__690_180(nametitle)
-    a.block-image__690_180(href="#")
-        .block-image__title #{nametitle}
-
+include mixins.pug
 
 .info-education
     .wrapper
@@ -61,5 +14,13 @@ mixin block-image__690_180(nametitle)
             h1.info-blocks__title Руководство. Педагогический состав
             .info-blocks__flex
                 .info-first
-                    +block-image__450_260('Администрация anafgffg')
-                    +block-image__930_360('комиссия общеобразовательных и общественных дисциплин комиссия общеобразовательных и общественных дисциплин')
+                    +block-image__450_260('#','Администрация')
+                    +block-image__930_360('#','комиссия общеобразовательных и общественных дисциплин комиссия общеобразовательных и общественных дисциплин')
+                .info-second
+                    +block-yellow__690_390('#','ЦМК отделения Электрификации и автоматизации сельского хозяйства ')
+                    .block-second__education
+                        +block-yellow__690_180('#','ЦМК Экономических дисциплин')
+                        .block-second__documents
+                            +block-image__690_180('#','ЦМК отделения Технического обслуживания и ремонта автотранспорта')
+                .info-first
+                    +block-image__930_360('#','ЦМК отделения Садово-паркового и ландшафтного строительства; Землеустройства ')
