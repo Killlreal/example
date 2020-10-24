@@ -1,0 +1,113 @@
+@import "mixins.scss";
+
+.info-education {
+  color: #171717;
+
+  .direction-links_position {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    justify-content: space-between;
+    height: 14px;
+    margin: 50px 0 100px 0;
+
+    .direction-links__main-link {
+      text-decoration: none;
+      color: #757474;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+  .info-blocks {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 100px;
+
+    &__title {
+      color: #171717;
+      text-transform: uppercase;
+      font-size: 30px;
+      line-height: 37px;
+      margin-bottom: 45px;
+    }
+
+    &__flex {
+      display: flex;
+      flex-direction: column;
+      .info-first {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .info-second {
+        height: 390px;
+        display: flex;
+        justify-content: space-between;
+
+        .block-second__education {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 390px;
+
+          .block-second__documents {
+            display: flex;
+            width: 690px;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+
+  [class*="info-"] {
+    margin-bottom: 30px;
+  }
+
+  .block-image__450_260 {
+    @include block-image(449px, 260px, "./assets/img/admin.png");
+  }
+  .block-image__930_360 {
+    @include block-image(930px, 260px, "./assets/img/comission.png");
+  }
+  .block-image__690_390 {
+    @include block-image(690px, 390px, "./assets/img/grain.png");
+  }
+  .block-image__690_160 {
+    @include block-image(690px, 161px, "./assets/img/technical.png");
+  }
+  .block-image__330_200 {
+    @include block-image(330px, 200px, "./assets/img/grain.png");
+  }
+  .block-image__690_180 {
+    @include block-image(690px, 175px, "./assets/img/technical.png");
+  }
+
+  .block-yellow__450_260 {
+    @include block-yellow(449px, 260px);
+  }
+  .block-yellow__930_360 {
+    @include block-yellow(930px, 260px);
+  }
+  .block-yellow__690_390 {
+    @include block-yellow(690px, 390px);
+  }
+  .block-yellow__690_160 {
+    @include block-yellow(690px, 161px);
+  }
+  .block-yellow__330_200 {
+    @include block-yellow(330px, 200px);
+  }
+  .block-yellow__690_180 {
+    @include block-yellow(690px, 175px);
+  }
+}

@@ -55,25 +55,6 @@
   }
 }
 
-.block-image__450_260 {
-  @include block-image(449px, 260px, "./assets/img/admin.png");
-}
-.block-image__930_360 {
-  @include block-image(930px, 260px, "./assets/img/comission.png");
-}
-.block-image__690_390 {
-  @include block-image(690px, 390px, "./assets/img/grain.png");
-}
-.block-image__690_160 {
-  @include block-image(690px, 161px, "./assets/img/technical.png");
-}
-.block-image__330_200 {
-  @include block-image(330px, 200px, "./assets/img/grain.png");
-}
-.block-image__690_180 {
-  @include block-image(690px, 175px, "./assets/img/technical.png");
-}
-
 // yellow
 
 @mixin block-yellow($width, $height) {
@@ -112,23 +93,4 @@
     box-shadow: inset 0 0 0 2px #ffb401;
     transition: all 300ms ease;
   }
-}
-
-.block-yellow__450_260 {
-  @include block-yellow(449px, 260px);
-}
-.block-yellow__930_360 {
-  @include block-yellow(930px, 260px);
-}
-.block-yellow__690_390 {
-  @include block-yellow(690px, 390px);
-}
-.block-yellow__690_160 {
-  @include block-yellow(690px, 161px);
-}
-.block-yellow__330_200 {
-  @include block-yellow(330px, 200px);
-}
-.block-yellow__690_180 {
-  @include block-yellow(690px, 175px);
 }

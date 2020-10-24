@@ -1,0 +1,104 @@
+footer {
+  display: flex;
+  color: #fff;
+  max-width: 1920px;
+  height: 426px;
+  background: #517679;
+
+  [class*="-link"] {
+    color: white;
+    transition: all 100ms ease;
+
+    &:hover {
+      color: #ffb401;
+      transition: all 100ms ease;
+    }
+
+    &:active {
+      color: blue;
+    }
+
+    &:focus {
+      color: #651120;
+    }
+  }
+
+  .wrapper-footer {
+    display: flex;
+    justify-content: space-between;
+
+    .work-time_title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .work-time_list {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      list-style-type: none;
+
+      li {
+        margin-bottom: 20px;
+      }
+    }
+
+    .contact-information_title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .contact-information_list {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      list-style-type: none;
+
+      li {
+        margin-bottom: 20px;
+      }
+    }
+
+    .nav_links {
+      list-style-type: none;
+
+      li {
+        margin-bottom: 20px;
+
+        .nav-link_footer {
+          text-decoration: none;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.02em;
+        }
+      }
+    }
+
+    .icon-vk {
+      font-size: 30px;
+      display: inline-block;
+    }
+
+    .satellite-link {
+      font-size: 20px;
+      display: inline-block;
+    }
+  }
+}

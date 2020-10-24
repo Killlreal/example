@@ -5,27 +5,27 @@ include mixins.pug
         .direction-links.direction-links_position
             a.direction-links__main-link(href="../blocks/index.html")
                 p Главная
-            img(src="../assets/img/icons/direction-arrow.svg", alt="Переход на страницу")
+            img(src="../assets/img/icons/direction-arrow.svg", alt="")
             p Сведения об общеобразовательной организации
         section.info-blocks
             h1.info-blocks__title Сведения об общеобразовательной организации
             .info-blocks__flex
                 .info-first
-                    +block-image__450_260('#','Основные сведения', 'bigDick')
+                    +block-image__450_260('#','Основные сведения')
                     +block-image__930_360('#','Структура и органы управления образовательной организацией')
                 .info-second
-                    +block-yellow__690_390('third-main.html','Руководство. Педагогический состав')
+                    +block-yellow__690_390('leadership.html','Руководство. Педагогический состав')
                     .block-second__education
                         +block-yellow__690_160('#','Образовательные стандарты')
                         .block-second__documents
                             +block-image__330_200('#','Образование')
                             +block-yellow__330_200('#','Документы')
-                .info-third.flex
+                .info-first
                     +block-image__450_260('#','Стипендии и иные виды материальной поддержки')
                     +block-image__930_360('#','Материально-техническое обеспечение и оснащенность образовательного процесса')
-                .info-fourth.flex
+                .info-second
                     +block-yellow__690_390('#','Платные образовательные услуги')
-                    .flex-column
+                    .block-second__education
                         +block-yellow__690_160('#','Вакантные места для приема (перевода)')
-                        .flex-example
+                        .block-second__documents
                             +block-image__330_200('#','Финансово- хозяйственная деятельность')
