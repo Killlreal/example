@@ -1,6 +1,6 @@
-@import "mixins.scss";
+@import "../mixins//mixins";
 
-.info-leadership {
+.info-education {
   color: #171717;
 
   .direction-links_position {
@@ -72,8 +72,9 @@
   [class*="info-"] {
     margin-bottom: 30px;
   }
+
   .block-image__450_260 {
-    @include block-image(449px, 260px, "./assets/img/garden.png");
+    @include block-image(449px, 260px, "./assets/img/admin.png");
   }
   .block-image__930_360 {
     @include block-image(930px, 260px, "./assets/img/comission.png");

@@ -1,0 +1,28 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+.wrapper {
+  width: 1410px;
+  margin: auto;
+}

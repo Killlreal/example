@@ -23,7 +23,7 @@ function buildPages() {
 }
 
 function buildStyles() {
-  return src("src/styles/*.scss")
+  return src("src/styles/**/*.scss")
     .pipe(sass())
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(dest("build/styles/"));
@@ -52,7 +52,7 @@ function buildAssets(cb) {
 function watchFiles() {
   watch("src/scripts/**/*.js", buildScripts);
   watch("src/assets/**/*.*", buildAssets);
-  watch("src/styles/*.scss", buildStyles);
+  watch("src/styles/**/*.scss", buildStyles);
   watch(["src/pages/**/*.pug", "src/blocks/**/*.pug"], buildPages);
   watch("src/*.scss", buildCSSDist);
 }
