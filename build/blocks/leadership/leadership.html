@@ -4,32 +4,36 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../../style.css"/>
   </head>
   <body>
     <header class="header">
       <div class="wrapper"> 
         <div class="wrapper-flex">
           <div class="wrapper-blocks">
-            <div class="wrapper-block-logo"><a class="logo-link" href="../blocks/index.html">
-                <div class="block-logo"><img src="../assets/img/logo.png" alt="Вельский сельскохозяйственный техникум"/>
+            <div class="wrapper-block-logo"><a class="logo-link" href="../main/index.html">
+                <div class="block-logo"><img src="../../assets/img/logo.png" alt="Вельский сельскохозяйственный техникум"/>
                   <p class="text-logo">Вельский сельскохозяйственный техникум имени Г.И. Шибанова</p>
                 </div></a></div>
             <div class="wrapper-block-search">
               <div class="block-search">
-                <input class="search-input" type="text" id="search" placeholder="Поиск"/><a class="link-icon-search" href="#"><img src="../assets/img/icons/search.svg" alt="Поиск"/></a>
+                <input class="search-input" type="text" id="search" placeholder="Поиск"/><a class="link-icon-search" href="#">
+                  <figure class="icon-search"></figure></a>
               </div>
-              <div class="block-icons"><a class="link-icon-data" href="#"><img src="../assets/img/icons/site-map.svg" alt="site-map"/></a><a class="link-icon-visually" href="#"><img src="../assets/img/icons/eye.svg" alt="Версия для слабовидящих"/></a></div>
+              <div class="block-icons"><a class="link-icon-data" href="#">
+                  <figure class="icon-site-map"></figure></a><a class="link-icon-visually" href="#">
+                  <figure class="icon-eye"></figure></a></div>
             </div>
           </div>
           <div class="wrapper-nav">
             <nav><a class="nav-education nav-list" href="#"> 
-                <p class="nav-title">Дистанционное обучение</p><img src="../assets/img/icons/arrow-down.svg" alt="Стрелка вниз"/></a><a class="nav-info nav-list" href="../blocks/info-education.html"> 
-                <p class="nav-title">Сведения об образовательной организации</p><img src="../assets/img/icons/arrow-down.svg" alt="Стрелка вниз"/></a><a class="nav-services nav-list" href="#">
+                <p class="nav-title">Дистанционное обучение</p><img src="../../assets/img/icons/arrow-down.svg" alt="Стрелка вниз"/></a><a class="nav-info nav-list" href="../info-education/info-education.html"> 
+                <p class="nav-title">Сведения об образовательной организации</p><img src="../../assets/img/icons/arrow-down.svg" alt="Стрелка вниз"/></a><a class="nav-services nav-list" href="#">
                 <p class="nav-title">Государственные услуги</p></a><a class="nav-services nav-list" href="#">
                 <p class="nav-title">Противодействие коррупции</p></a><a class="nav-info nav-list" href="#"> 
-                <p class="nav-title">Мастерские 2020</p><img src="../assets/img/icons/arrow-down.svg" alt="Стрелка вниз"/></a><a class="nav-services nav-list" href="#"> 
-                <p class="nav-title">Электронные обращения</p></a></nav><a class="nav-burger" href="#"><img src="../assets/img/icons/burger.svg" alt=""/></a>
+                <p class="nav-title">Мастерские 2020</p><img src="../../assets/img/icons/arrow-down.svg" alt="Стрелка вниз"/></a><a class="nav-services nav-list" href="#"> 
+                <p class="nav-title">Электронные обращения</p></a></nav><a class="nav-burger" href="#">
+              <figure class="icon-menu"></figure></a>
           </div>
         </div>
       </div>
@@ -39,9 +43,9 @@
       <!-- images blocks-->
       <div class="info-leadership">
         <div class="wrapper">
-          <div class="direction-links direction-links_position"><a class="direction-links__main-link" href="../blocks/index.html">
-              <p>Главная</p></a><img src="../assets/img/icons/direction-arrow.svg" alt=""/><a class="direction-links__main-link" href="../blocks/info-education.html">
-              <p>Сведения об общеобразовательной организации</p></a><img src="../assets/img/icons/direction-arrow.svg" alt=""/>
+          <div class="direction-links direction-links_position"><a class="direction-links__main-link" href="../main/index.html">
+              <p>Главная</p></a><img src="../../..assets/img/icons/direction-arrow.svg" alt=""/><a class="direction-links__main-link" href="../info-education/info-education.html">
+              <p>Сведения об общеобразовательной организации</p></a><img src="../../assets/img/icons/direction-arrow.svg" alt=""/>
             <p>Руководство. Педaгогический состав</p>
           </div>
           <section class="info-blocks">
@@ -103,7 +107,7 @@
             <nav>
               <ul class="nav_links">
                 <li><a class="nav-link_footer" href="#">Дистанционное обучение</a></li>
-                <li><a class="nav-link_footer" href="#">Сведения об образовательной организации</a></li>
+                <li><a class="nav-link_footer" href="../info-education/info-education.html">Сведения об образовательной организации</a></li>
                 <li><a class="nav-link_footer" href="#">Государственные услуги</a></li>
                 <li><a class="nav-link_footer" href="#">Противодействие коррупции</a></li>
                 <li><a class="nav-link_footer" href="#">Мастерские 2020</a></li>
@@ -115,5 +119,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../../scripts/script.js"></script>
   </body>
 </html>

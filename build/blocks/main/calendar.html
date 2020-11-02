@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="../../styles/main/calendar.scss"/>
+  </head>
+  <body>
+    <div class="personal-area">
+      <div class="wrapper">
+        <div class="caledar">
+          <div class="main-date">
+            <div class="main-date__title">
+              <div class="main-date__mounth">{{ month}}</div>
+              <div class="main-date__year">{{ year }}</div>
+            </div>
+            <div class="main-date__slider">
+              <ul class="arrows">
+                <li><span @click="prev">
+                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 6.5L7.5 0.870834L7.5 12.1292L0 6.5Z" fill="#617F88"></path>
+                    </svg></span></li>
+                <li><span @click="next">
+                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 6.5L0.5 0.870834L0.5 12.1292L8 6.5Z" fill="#617F88"></path>
+                    </svg></span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="weeks">
+            <div class="weeks__name">
+              <ul class="weeks__titles">
+                <li class="weeks__title" v-for="day in weekdays">{{ day }}</li>
+              </ul>
+            </div>
+            <div class="days">
+              <div class="numbers" @click="dayClick(day)" v-for="(day, index) in days" :style="{ gridColumn: column(index) }" :class="{ active: current(day), today: today(day), one: day.format('D').length == 1 }">{{ day.format('D')}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="events">
+          <div class="events__title">Событие</div>
+          <div class="events__date">Сегодня 20 мая</div>
+          <div class="events__today">
+            <div class="events__block">
+              <div class="events__block_title">Событие 1</div>
+              <div class="events__block_time">
+                <div class="time-start">17:00</div>
+                <div class="time-end">18:00</div>
+              </div>
+            </div>
+            <div class="events__block">
+              <div class="events__block_title">Событие 2</div>
+              <div class="events__block_time">
+                <div class="time-start">17:00</div>
+                <div class="time-end">18:00</div>
+              </div>
+            </div>
+            <div class="events__block">
+              <div class="events__block_title">Событие 3</div>
+              <div class="events__block_time">
+                <div class="time-start">17:00</div>
+                <div class="time-end">18:00</div>
+              </div>
+            </div>
+            <div class="events__block">
+              <div class="events__block_title">Событие 4</div>
+              <div class="events__block_time">
+                <div class="time-start">17:00</div>
+                <div class="time-end">18:00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

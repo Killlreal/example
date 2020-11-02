@@ -13,7 +13,7 @@ function clearBuild() {
 }
 
 function buildPages() {
-  return src("src/blocks/*.pug")
+  return src("src/blocks/**/*.pug")
     .pipe(
       pug({
         pretty: true,
@@ -54,7 +54,7 @@ function watchFiles() {
   watch("src/assets/**/*.*", buildAssets);
   watch("src/styles/**/*.scss", buildStyles);
   watch(["src/pages/**/*.pug", "src/blocks/**/*.pug"], buildPages);
-  watch("src/*.scss", buildCSSDist);
+  watch("src/styles/**/*.scss", buildCSSDist);
 }
 
 exports.default = series(

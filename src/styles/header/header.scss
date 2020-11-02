@@ -60,11 +60,10 @@
               border: none;
               border-bottom: 1px solid #757474;
               background: #f6f6f6;
-
-              .icon-search {
-                width: 30px;
-                height: 30px;
-              }
+            }
+            .icon-search {
+              color: #171717;
+              font-size: 25px;
             }
           }
 
@@ -72,6 +71,14 @@
             display: flex;
             flex: 1 0 auto;
             justify-content: space-between;
+            .icon-site-map {
+              font-size: 25px;
+              color: #171717;
+            }
+            .icon-eye {
+              font-size: 25px;
+              color: #171717;
+            }
           }
         }
       }
@@ -102,6 +109,10 @@
             color: #171717;
             text-decoration: none;
           }
+        }
+        .icon-menu {
+          font-size: 25px;
+          color: #171717;
         }
       }
     }

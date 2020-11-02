@@ -36,8 +36,8 @@
 
 @font-face {
   font-family: "fontello";
-  src: url("fonts/fontello.woff2?5855350") format("woff2"),
-    url("fonts/fontello.woff?5855350") format("woff");
+  src: url("fonts/fontello.woff2?92372535") format("woff2"),
+    url("fonts/fontello.woff?92372535") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -50,48 +50,48 @@
   display: inline-block;
 }
 
-.icon-alert:before {
+.icon-search:before {
   content: "\e800";
-}
-.icon-arrow-down:before {
+} /* '' */
+.icon-alert:before {
   content: "\e801";
-}
-.icon-burger:before {
+} /* '' */
+.icon-arrow-down:before {
   content: "\e802";
-}
+} /* '' */
 .icon-direction-arrow:before {
   content: "\e803";
-}
+} /* '' */
 .icon-documets:before {
   content: "\e804";
-}
+} /* '' */
 .icon-education:before {
   content: "\e805";
-}
-.icon-eye:before {
-  content: "\e806";
-}
+} /* '' */
 .icon-paid-education:before {
-  content: "\e807";
-}
+  content: "\e806";
+} /* '' */
 .icon-places:before {
-  content: "\e808";
-}
+  content: "\e807";
+} /* '' */
 .icon-satellite:before {
-  content: "\e809";
-}
-.icon-search:before {
-  content: "\e80a";
-}
-.icon-site-map:before {
-  content: "\e80b";
-}
+  content: "\e808";
+} /* '' */
 .icon-teachers:before {
-  content: "\e80c";
-}
+  content: "\e809";
+} /* '' */
 .icon-vk:before {
-  content: "\e80d";
-}
+  content: "\e80a";
+} /* '' */
 .icon-wheel:before {
-  content: "\e80e";
-}
+  content: "\e80b";
+} /* '' */
+.icon-site-map:before {
+  content: "\e80c";
+} /* '' */
+.icon-menu:before {
+  content: "\f0c9";
+} /* '' */
+.icon-eye:before {
+  content: "🔍";
+} /* '\1f50d' */
